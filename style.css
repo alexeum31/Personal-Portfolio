@@ -26,27 +26,60 @@ h1 {
     font-style: italic;
     color: #be3144;
 }
-#projects-section-header {
-    color:white;
-
-}
-.project-image {
-    height: calc(100% - 6.8rem);
-    width: 100%;
-    object-fit: cover;
-}
 
 #navbar {
     width: 100%;
     height: 10vh;
     background-image: linear-gradient(62deg, #3a3d40 0%, red 100%);
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
 }
-.Nav {
-  display: inline-flex;
-  float: right; 
+.nav {
   margin-right: 15px;
   color: white;
   text-decoration: none;
   font-size: 3vh;
   }
- 
+
+  .projects {
+    background: var(--main-gray);
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    border-radius: 2px;
+}
+
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 4rem;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    margin-bottom: 6rem;
+}
+
+.project-image {
+    height: calc(100% - 6.8rem);
+    width: 100%;
+    object-fit: cover;
+    display: flex;
+    
+
+}
+.project-name {
+    font-size: 1rem;
+    box-sizing: inherit;
+    margin:0;
+    padding: 1rem;;    
+    color: white;
+    text-decoration: none;
+
+}
+
+
+.text-container {
+    background-color: #5b5b5b;
+    font-size: small;
+    text-align: center;
+}
