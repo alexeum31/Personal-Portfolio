@@ -1,4 +1,4 @@
-#welcome-section {
+  #welcome-section {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -14,11 +14,18 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    background-color: #45567d;
+    background-image: linear-gradient(62deg, #3a3d40 0%, #45567d 100%);
+
 }
 h1 {
     font-size: 3rem;
     color: white;
+}
+h2 {
+    color: white;
+}
+h3 {
+    text-align: center;
 }
 #welcome-line2 {
     font-size: 1.4rem;
@@ -36,6 +43,7 @@ h1 {
     justify-content: flex-end;
 
 }
+
 .nav {
   margin-right: 15px;
   color: white;
@@ -43,15 +51,18 @@ h1 {
   font-size: 3vh;
   }
 
-  .projects {
-    background: var(--main-gray);
-    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-    border-radius: 2px;
-}
+.project-title {
+    text-decoration: none;
 
+}
+#projects-section-header {
+    font: 3rem;
+    margin: 3rem auto 6rem auto;
+    border-bottom: 0.2rem solid white;
+}
   .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-template-columns: 1fr 1fr;
     grid-gap: 4rem;
     width: 100%;
     max-width: 1280px;
@@ -60,7 +71,7 @@ h1 {
 }
 
 .project-image {
-    height: calc(100% - 6.8rem);
+    height: calc(100% - 10rem);
     width: 100%;
     object-fit: cover;
     display: flex;
@@ -71,9 +82,8 @@ h1 {
     font-size: 1rem;
     box-sizing: inherit;
     margin:0;
-    padding: 1rem;;    
+    padding: 1rem;
     color: white;
-    text-decoration: none;
 
 }
 
@@ -82,4 +92,34 @@ h1 {
     background-color: #5b5b5b;
     font-size: small;
     text-align: center;
+
 }
+#contact {
+    width: 100%;
+    background-image: linear-gradient(62deg, #303841 0%, #c43800 100%);
+    height:fit-content;
+    
+}
+#big-contact-text {
+    text-align: center;
+}
+#small-contact-text {
+    text-align: center;
+}
+.contact-list {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 4rem;
+    flex-wrap: wrap;
+    text-decoration: none;
+    text-align:center;
+  }
+  
+  .contact-list a {
+    margin-right: 10px;
+    text-decoration: none;
+    color:white;
+    /* Adjust the value as needed */
+  }
+  
