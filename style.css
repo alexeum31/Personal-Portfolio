@@ -5,6 +5,9 @@
 ul {
     margin-top: 0;
 }
+li {
+    margin-bottom: 5px;
+}
 #welcome-section {
     display: flex;
     flex-direction: column;
@@ -97,15 +100,17 @@ h3 {
 
 
 .text-container {
-    background-color: #5b5b5b;
+    background-image: linear-gradient(62deg, #000000 0%, #8b7400 100%);
     font-size: small;
     text-align: center;
 
 }
 .description-container {
-    background-color: #5b5b5b;
+    background-image: linear-gradient(62deg, #000000 0%, #702d03 100%);
     font-size: small;
     color: white;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 
 }
 
