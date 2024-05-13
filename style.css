@@ -1,12 +1,7 @@
-* {
-    font-family: 'Didact Gothic', sans-serif;
-    font-weight: 300;
-}
-ul {
-    margin-top: 0;
-}
-li {
-    margin-bottom: 5px;
+
+i {
+    margin-left:10px;
+    margin-right:10px;
 }
 #welcome-section {
     display: flex;
@@ -14,8 +9,8 @@ li {
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 95vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("pictures/princeton.png");
+    height: 100vh;
+    background-image: linear-gradient(-15deg, #B8F2E6 33%, #FAF3DD 33%);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -27,35 +22,36 @@ li {
     justify-content: center;
     align-items: center;
     width: 100%;
-    background-image: linear-gradient(62deg, #303841 0%, #c43800 100%);
+    background-color:#CDE8E5;
     column-count: 1;
 }
-h1 {
-    font-size: 3rem;
-    color: #FF671F;
-}
-h2 {
-    color: white;
-}
+
+
 h3 {
     text-align: center;
+}
+#welcome-line1 {
+    font-style: monoLisa ;
+    font-size: 5rem !important; 
+    font-weight: 200;
+    
 }
 #welcome-line2 {
     font-size: 1.4rem;
     font-weight: 200;
     font-style: italic;
-    color: #FF671F;
     
 }
 
 #navbar {
     width: 100%;
     height: 5vh;
-    background-image: linear-gradient(62deg, #3a3d40 0%, rgb(100, 31.8, 0) 100%);
+    background-color: black;
     display: flex;
     align-items: center;
     justify-content: flex-end;
-
+    z-index:100;
+    position: fixed;
 }
 
 .nav {
@@ -72,15 +68,9 @@ h3 {
 #projects-section-header {
     font: 3rem;
     margin: 3rem auto 6rem auto;
-    border-bottom: 0.2rem solid white;
+    color: black;
 }
   .projects-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 4rem;
-    width: 100%;
-    max-width: 1280px;
-    margin: 0 auto;
     margin-bottom: 6rem;
 }
 
@@ -94,7 +84,7 @@ h3 {
     box-sizing: inherit;
     margin:0;
     padding: 1rem;
-    color: white;
+    color: black;
 
 }
 
@@ -108,7 +98,7 @@ h3 {
 .description-container {
     background-image: linear-gradient(62deg, #000000 0%, #702d03 100%);
     font-size: small;
-    color: white;
+    color: black;
     padding-top: 1rem;
     padding-bottom: 1rem;
 
@@ -126,7 +116,7 @@ h3 {
 #small-contact-text {
     text-align: center;
 }
-.contact-list {
+#contact-list {
     display: flex;
     justify-content: center;
     width: 100%;
@@ -142,6 +132,36 @@ h3 {
 
     display: inline-block;    
     text-decoration: none;
-    color:white;
+    color:black;
+  }
+  .articles > .row {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
   }
   
+  .articles > .row > .col-md-4 {
+    flex: 0 0 auto;
+  }
+  .bi-chevron-compact-right {
+  font-size: 40px;
+  
+}
+.card {
+
+    background-size: 100% 20px;
+    max-width: 100%;
+    margin: 15px;
+  }
+  
+
+  
+  .card-title {
+    font-family: 'sofia-pro', serif;
+    font-weight: bold;
+    padding: 2px;
+  }
+  
+  .card-text {
+    font-size: small;
+  }

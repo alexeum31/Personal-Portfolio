@@ -9,6 +9,8 @@
   <meta name="keywords" content="keywords" />
   <link rel="stylesheet" href="./style.css" type="text/css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
   <style type="text/css">
     .body {
       width: auto;
@@ -20,146 +22,180 @@
   <style type="text/css">
     body {
       margin: 0;
+      font-family: 'MonoLisa', monospace;
+
     }
     </style>
-    
-  <div id="navbar">
+
+  <div class="container-fluid" id="navbar">
     <a href="#welcome-section" class="nav">Home</a>
     <a href="#projects" class="nav">Projects </a>
     <!-- <a href="#about-me" class="nav">About Me </a> -->
   </div>
 
-  <div id="welcome-section">
+  <div class="container-fluid" id="welcome-section">
+    <div class="row">
     <h1 id="welcome-line1">Hi, I'm Alex!</h1>
+  </div>
+  <div class="row">
     <h2 id="welcome-line2"> A Devloper @ Princeton</h2>
-
-    <div class="contact-list">
-    <a id="email" href ="mailto:ae2576@princeton.edu"><i class="far fa-envelope fa-2x" style="color: #ffffff;"></i></a>
-    <a id="github" href ="https://github.com/alexeum31"> <i class="fab fa-github fa-2x" style="color: #ffffff;"></i></a>
-    <a id="linkedin" href ="https://www.linkedin.com/in/alexander-eum-5a1a39244/"><i class="fab fa-linkedin fa-2x" style="color: #ffffff;"></i></a>
-      
-      
-     
-
-
+</div>
+<div class="row" id="contact-list">
+  <div class="col">
+    <a id="email" href ="mailto:ae2576@princeton.edu"><i class="far fa-envelope fa-2x" style="color: #000000;"></i></a>
+    <a id="github" href ="https://github.com/alexeum31"> <i class="fab fa-github fa-2x" style="color: #000000;"></i></a>
+    <a id="linkedin" href ="https://www.linkedin.com/in/alexander-eum-5a1a39244/"><i class="fab fa-linkedin fa-2x" style="color: #000000;"></i></a>
+  </div>
     </div>
   </div>
 
-  <div id="projects">
+  <div class="container-fluid" id="projects">
+    <h2 id="projects-section-header">Here are some of my projects!</h2>
 
-    <h2 id="projects-section-header">Here are some of my projects:</h2>
+  <h3 id="projects-section-header">My most recent project!</h3>
 
-    <div class="projects-grid">
-      <a href="https://projects.dailyprincetonian.com/careers-service-issue/" target="_blank" class="project-title">
-        <div class="text-container">
-        <h2 class="project-name">In the Service of Whom? The Daily Princeonian Career Service Special Issue</h2>
-        </div>
-        <img class="project-image" src="pictures/career.png"></img>
-        <div class="description-container">
-        <ul class="description">
-          <li>Designed and created a website for the Daily Princetonian’s Career Services Special Issue
-          </li>
-          <li>Utilized a Linkedin inspired interface through Bootstrap cards and grid to deliver student-written articles
-          </li>
-          <li>Developed a profile card, a news section showcasing past projects, and a TigerNetworks logo mimicking Linkedin’s logo
-          </li>
-        </ul>
-        </div>
-      </a>
-
-      <a href="https://m.cubits.ai/" target="_blank" class="project-title">
-        <div class="text-container">
-        <h2 class="project-name">Mobile Cubits Chatbot Application</h2>
-        </div>
-        <img class="project-image" src="pictures/cubits.png"></img>
-        <div class="description-container">
-        <ul class="description">
-          <li>Designed and created a mobile application that utilized the newly created CUbits API endpoints and openAI, using ReactJS
-          </li>
-          <li>Created a friendly user interface that displays videos and transcripts on the same screen with a search bar that can search for specific words 
-          </li>
-        </ul>
-        </div>
-      </a>
-      
-      <a href="https://alexeum31.github.io/Youtube-Subtitle-Generator/" target="_blank" class="project-title">
-        <div class="text-container">
-        <h2 class="project-name">Youtube Subtitle Generator</h2>
-        </div>
-        <img class="project-image" src="pictures/youtube-subtitle-generator.png"></img>
-        <div class="description-container">
+    <div class="overflow-hidden col-12 col-sm-6 col-md-4 col-lg-3">
+      <div class="card card-right border mx-auto d-block ">
+        <img class="project-image" src="pictures/courseAdmin.gif"></img>
+        <div class="card-body d-flex flex-column">
+          <h5 class="card-title overflow-hidden">CourseAdmin</h5>
           <ul class="description">
-            <li>Designed and created a deployed web application by utilizing Youtube Subtitles API to generate Youtube subtitle transcriptions that accelerates efficiency when creating evidence for Speech and Debate Students
-            </li>
-            <li>Utilized the website as the Assistant Coach for Berkeley Preparatory High School Speech and Debate Team to achieve historic success like winning the Harvard 2023 Tournament
-            </li>
+          <li>Developed and designed on a team of 5 for Princeton course administrators to change major/minor requirements 
+          </li>
+          <li>Programmed REST API via Flask to populate and query our database on MongoDB. Hosted on Render. 
+          </li>
+          <li>Note: It may take some time to load up. Princeton associated account required to view. 
+          </li>
           </ul>
-          </div>
-
-      </a>
-      
-
-      <a href="https://projects.dailyprincetonian.com/mental-health-awareness/" target="_blank" class="project-title">
-        <div class="text-container">
-          <h2 class="project-name">The Daily Princetonian Mental Health Special Issue</h2>
-          </div>
-          <img class="project-image" src="pictures/mental_health.png"></img>
-          <div class="description-container">
-            <ul class="description">
-              <li>Designed and created a website for the Daily Princetonian’s Mental Health Awareness Month Special Issue
-              </li>
-              <li>Improved user experience by utilizing a carousel component to display articles in an engaging and organized manner
-              </li>
-            </ul>
-            </div>
-      </a>
-
-      <a href="https://projects.dailyprincetonian.com/disability-awareness-month-issue/" target="_blank" class="project-title">
-        <div class="text-container">
-          <h2 class="project-name">The Daily Princetonian Disability Special Issue</h2>
-          </div>
-          <img class="project-image" src="pictures/Disability Awareness_Purple2.png"></img>
-          <div class="description-container">
-            <ul class="description">
-              <li>Designed and created a website for the Daily Princetonian’s Disability Awareness Month Special Issue
-              </li>
-              <li>Improved user experience by utilizing a carousel component to display articles in an engaging and organized manner
-              </li>
-              <li>
-                Created a movable map feature that displayed text about the accessibility of Princeton’s campus and linked to an article
-              </li>
-            </ul>
-            </div>
-
-      </a>
-
-      <a href="https://github.com/alexeum31/Racist-Terminology-Remover" target="_blank" class="project-title">
-        <div class="text-container">
-          <h2 class="project-name">Language Inclusivity Facilitator</h2>
-          </div>
-          <img class="project-image" src="pictures/blm.png"></img>
-          <div class="description-container">
-            <ul class="description">
-              <li>Developed a terminal-run application aimed at identifying and addressing common problematic subtleties in everyday conversation, preventing micro-aggressions to facilitate increasingly diverse teams and groups that foster ingenuity 
-              </li>
-              <li>Implemented a Guided User Interface using the Java Swing Library to prompt the user for input text, sentence by sentence
-              </li>
-              <li>
-                Created a data set of problematic words, replacement words, reasoning, and citations
-              </li>
-            </ul>
-            </div>
-
-      </a>
-      <!--Additional Projects go here-->
-      
-
+          <a href="https://courseadmin.onrender.com/" class="btn btn-dark mt-auto">Check it out!</a>
+        </div>
+      </div>
     </div>
+
+    <h3 id="projects-section-header">Other cool projects:</h2>
+
+  <div class="container-fluid articles">
+    <div class="row d-flex align-items-center" id="container">
+
+  <div class="overflow-hidden col-12 col-sm-6 col-md-4 col-lg-3">
+    <div class="card card-right border mx-auto d-block ">
+      <img class="project-image" src="pictures/career.png"></img>
+      <div class="card-body d-flex flex-column">
+        <h5 class="card-title overflow-hidden">In the Service of Whom? The Daily Princeonian Career Service Special Issue</h5>
+        <ul class="description">
+        <li>Designed and created a website for the Daily Princetonian’s Career Services Special Issue
+        </li>
+        <li>Utilized a Linkedin inspired interface through Bootstrap cards and grid to deliver student-written articles
+        </li>
+        <li>Developed a profile card, a news section showcasing past projects, and a TigerNetworks logo mimicking Linkedin’s logo
+        </li>
+        </ul>
+        <a href="https://projects.dailyprincetonian.com/careers-service-issue/" class="btn btn-dark mt-auto">Check it out!</a>
+      </div>
+    </div>
+  </div>
+  <div class="overflow-hidden col-12 col-sm-6 col-md-4 col-lg-3">
+    <div class="card card-right border mx-auto d-block ">
+      <img src="pictures/cubits.png" class="card-img-top" alt="...">
+      <div class="card-body d-flex flex-column">
+        <h5 class="card-title overflow-hidden">Mobile Cubits Chatbot Application</h5>
+        <ul class="description">
+        <li>Designed and created a mobile application that utilized the newly created CUbits API endpoints and openAI, using ReactJS
+        </li>
+        <li>Created a friendly user interface that displays videos and transcripts on the same screen with a search bar that can search for specific words 
+        </li>
+        </ul>
+        <a href="https://m.cubits.ai/" class="btn btn-dark mt-auto">Check it out!</a>
+      </div>
+    </div>
+  </div>
+  <div class="overflow-hidden col-12 col-sm-6 col-md-4 col-lg-3">
+    <div class="card card-right border mx-auto d-block ">
+      <img src="pictures/youtube-subtitle-generator.png" class="card-img-top" alt="...">
+      <div class="card-body d-flex flex-column">
+        <h5 class="card-title overflow-hidden">Youtube Subtitle Generator</h5>
+        <ul class="description">
+        <li>Designed and created a deployed web application by utilizing Youtube Subtitles API to generate Youtube subtitle transcriptions that accelerates efficiency when creating evidence for Speech and Debate Students
+        </li>
+        <li>Utilized the website as the Assistant Coach for Berkeley Preparatory High School Speech and Debate Team to achieve historic success like winning the Harvard 2023 Tournament
+        </li>
+        </ul>
+        <a href="https://alexeum31.github.io/Youtube-Subtitle-Generator/" class="btn btn-dark mt-auto">Check it out!</a>
+      </div>
+    </div>
+  </div>
+  <div class="overflow-hidden col-12 col-sm-6 col-md-4 col-lg-3">
+    <div class="card card-right border mx-auto d-block ">
+      <img src="pictures/mental_health.png" class="card-img-top" alt="...">
+      <div class="card-body d-flex flex-column">
+        <h5 class="card-title overflow-hidden">The Daily Princetonian Mental Health Special Issue</h5>
+        <ul class="description">
+          <li>Designed and created a website for the Daily Princetonian’s Mental Health Awareness Month Special Issue
+          </li>
+          <li>Improved user experience by utilizing a carousel component to display articles in an engaging and organized manner
+          </li>
+        </ul>
+        <a href="https://projects.dailyprincetonian.com/mental-health-awareness/" class="btn btn-dark mt-auto">Check it out!</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="overflow-hidden col-12 col-sm-6 col-md-4 col-lg-3">
+    <div class="card card-right border mx-auto d-block ">
+      <img src="pictures/Disability Awareness_Purple2.png" class="card-img-top" alt="...">
+      <div class="card-body d-flex flex-column">
+        <h5 class="card-title overflow-hidden">The Daily Princetonian Disability Special Issue</h5>
+        <ul class="description">
+          <li>Designed and created a website for the Daily Princetonian’s Disability Awareness Month Special Issue
+          </li>
+          <li>Improved user experience by utilizing a carousel component to display articles in an engaging and organized manner
+          </li>
+          <li>
+            Created a movable map feature that displayed text about the accessibility of Princeton’s campus and linked to an article
+          </li>
+        </ul>
+        <a href="https://projects.dailyprincetonian.com/disability-awareness-month-issue/" class="btn btn-dark mt-auto">Check it out!</a>
+      </div>
+    </div>
+  </div>
+  <div class="overflow-hidden col-12 col-sm-6 col-md-4 col-lg-3">
+    <div class="card card-right border mx-auto d-block ">
+      <img src="pictures/blm.png" class="card-img-top" alt="...">
+      <div class="card-body d-flex flex-column">
+        <h5 class="card-title overflow-hidden">Language Inclusivity Facilitator</h5>
+        <ul class="description">
+          <li>Developed a terminal-run application aimed at identifying and addressing common problematic subtleties in everyday conversation, preventing micro-aggressions to facilitate increasingly diverse teams and groups that foster ingenuity 
+          </li>
+          <li>Implemented a Guided User Interface using the Java Swing Library to prompt the user for input text, sentence by sentence
+          </li>
+          <li>
+            Created a data set of problematic words, replacement words, reasoning, and citations
+          </li>
+        </ul>      
+        <a href="https://github.com/alexeum31/Racist-Terminology-Remover" class="btn btn-dark mt-auto">Check it out!</a>
+      </div>
+    </div>
+  </div>
+
+  <!--Additonal Projects Here-->
+</div>
+<div class="container text-center">
+  <div class="btn-group btn-group-lg" role="group">
+    <button type="button" id="scroll-left" class="btn btn-secondary" aria-label="Scroll left">
+      <i class="fas fa-chevron-left"></i>
+    </button>
+    <button type="button" id="scroll-right" class="btn btn-secondary" aria-label="Scroll right">
+      <i class="fas fa-chevron-right"></i>
+    </button>
+  </div>
+</div>
+
 
     <div id="about-me">
     </div>
 
   </div>
+<script src="scrollButton.js"></script>
 
 </body>
 
