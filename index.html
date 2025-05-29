@@ -52,7 +52,78 @@
   <div class="container-fluid" id="projects">
     <h2 id="projects-section-header">Here are some of my projects!</h2>
 
-  <h3 id="projects-section-header">My most recent project!</h3>
+ <h3 id="projects-section-header" class="text-center">My most recent projects!</h3>
+
+<div class="container">
+  <div class="row justify-content-center">
+
+    
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+      <div class="card card-right border">
+        <div class="card-body d-flex flex-column">
+           <img class="project-image" src="pictures/compiler.png"></img>
+          <h5 class="card-title overflow-hidden">C-To-PDP-11 Compiler and Assembler</h5>
+          <ul class="description">
+            <li>Developed a pipeline to compile C code PDP-11 assembly code by utilizing Clang (LLVM) and Python llvmlite</li>
+            <li>Utilized macro11 to implement an assembler that converts PDP-11 assembly code to machine code and emulated it</li>
+          </ul>
+          <a href=mailto:ae2576@princeton.edu class="btn btn-dark mt-auto">Email for source code!</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+      <div class="card card-right border">
+        <div class="card-body d-flex flex-column">
+          <img class="project-image" src="pictures/tcp-ip.jpg"></img>
+          <h5 class="card-title overflow-hidden">Optimizing the BBR Algorithm for Video Streaming</h5>
+          <ul class="description">
+            <li>Authored research paper enhancing BBR-S TCP congestion control by optimizing bottleneck bandwidth estimation</li>
+            <li>Determined optimal hist_percentile interval (85, 95], reducing bufferbloat and RTT while maintaining high goodput</li>
+          </ul>
+          <a href="https://github.com/ad111111/COS-IW" class="btn btn-dark mt-auto">Check it out!</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+      <div class="card card-right border">
+        <div class="card-body d-flex flex-column">
+           <img class="project-image" src="pictures/xv6.jpg"></img>
+          <h5 class="card-title overflow-hidden">Xv6 Operating System</h5>
+          <ul class="description">
+            <li>Developed OS that implements virtual memory with file-backed, shared mappings, a stride scheduler that uses dynamic process participation to fairly schedule processes, and system calls to \textbf{spawn} and destroy threads</li>
+          </ul>
+          <a href=mailto:ae2576@princeton.edu class="btn btn-dark mt-auto">Email for source code!</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+      <div class="card card-right border">
+        <div class="card-body d-flex flex-column">
+          <img class="project-image" src="pictures/raft.png"></img>
+          <h5 class="card-title overflow-hidden">Raft Consensus Algorithm</h5>
+          <ul class="description">
+            <li>Developed Raft’s fault-tolerant leader election and log replication to maintain consistency across distributed nodes despite network and node failures, ensuring strong correctness guarantees under concurrency</li>
+          </ul>
+          <a href=mailto:ae2576@princeton.edu class="btn btn-dark mt-auto">Email for source code!</a>
+        </div>
+      </div>
+    </div>
+
+
+
+    
+  </div>
+</div>
+
+
+
+    <h3 id="projects-section-header">Other cool projects:</h2>
+
+  <div class="container-fluid articles">
+    <div class="row d-flex align-items-center" id="container">
 
     <div class="overflow-hidden col-12 col-sm-6 col-md-4 col-lg-3">
       <div class="card card-right border mx-auto d-block ">
@@ -70,12 +141,8 @@
           <a href="https://courseadmin.onrender.com/" class="btn btn-dark mt-auto">Check it out!</a>
         </div>
       </div>
-    </div>
+      </div>
 
-    <h3 id="projects-section-header">Other cool projects:</h2>
-
-  <div class="container-fluid articles">
-    <div class="row d-flex align-items-center" id="container">
 
   <div class="overflow-hidden col-12 col-sm-6 col-md-4 col-lg-3">
     <div class="card card-right border mx-auto d-block ">
@@ -94,6 +161,8 @@
       </div>
     </div>
   </div>
+
+
   <div class="overflow-hidden col-12 col-sm-6 col-md-4 col-lg-3">
     <div class="card card-right border mx-auto d-block ">
       <img src="pictures/cubits.png" class="card-img-top" alt="...">
